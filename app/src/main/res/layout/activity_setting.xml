@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/rlFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusable="true">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+            </com.andexert.library.RippleView>
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Setting"
+                android:layout_gravity="center"
+                android:textColor="#22253B"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnLanguage"
+            android:layout_width="wrap_content"
+            app:rippleColor="@color/white"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_bg_vip"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="15dp"
+                    android:src="@drawable/diamond" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:text="VIP member"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnManagerSubs"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivManagerSubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_backupp" />
+
+            <TextView
+                android:id="@+id/tvManagerSubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivManagerSubs"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="10dp"
+
+                android:text="Backup at other Drive"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnRate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivRate"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Rate app"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_restoredd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivUpdate"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Update app"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/vector_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivShare"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="10dp"
+                android:text="Share"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_chatt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivSupport"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Support"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnPrivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rate_app"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:id="@+id/ivPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_work" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ivPrivacy"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Privacy policy"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+</RelativeLayout>

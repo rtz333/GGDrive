@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/permission">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ic_bg_permission">
+
+            <LinearLayout
+                android:id="@+id/llAllow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/ic_welcome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Welcome!"
+                    android:textColor="#22253B"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="middle"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:lines="3"
+                    android:paddingTop="12dp"
+                    android:text="@string/welcome"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_tick_square" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:paddingLeft="10dp"
+                            android:text="Allow SMS backup and restore permission."
+                            android:textColor="#22253B"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_tick_square" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:paddingLeft="10dp"
+                            android:text="Allow permission to backup and restore call logs."
+                            android:textColor="#22253B"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_tick_square" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:paddingLeft="10dp"
+                            android:text="Allow contact permission to sign in to Google Drive."
+                            android:textColor="#22253B"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llAllow"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:text="Thank you!"
+                android:textColor="#22253B"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/ic_agree"
+            android:paddingTop="20dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="I agree"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </com.andexert.library.RippleView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:padding="7dp"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back" />
+        </com.andexert.library.RippleView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_bg_recently"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnSms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/ic_bg_sms"
+                android:gravity="center"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <TextView
+                    android:id="@+id/tvSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="SMS"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnCall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_call_logs"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <TextView
+                    android:id="@+id/tvCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="Call logs"
+                    android:textColor="#85878D"
+                    android:textSize="13sp" />
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_bg_search"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_search"
+                        android:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtSearch"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:hint="Search Now"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#85878D"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/ic_bg_ani"
+                android:visibility="visible"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_filter" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnUnFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/ic_bg_ani"
+                android:visibility="gone"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_un_filter" />
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_toLeftOf="@+id/btnFilter"
+                android:background="@drawable/ic_bg_ani"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_restore" />
+            </com.andexert.library.RippleView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvChat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:paddingTop="8dp"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_sms" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:paddingTop="8dp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_call_logs" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

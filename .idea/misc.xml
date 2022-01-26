@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/drawable/ic_backup_progress.xml" value="0.3828125" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/drawable/ic_telegram.xml" value="0.3828125" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/drawable/ic_tick_square.xml" value="0.3828125" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/drawable/ic_union.xml" value="0.3828125" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/drawable/ic_vector_share.xml" value="0.3828125" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/layout/activity_backup_completed.xml" value="0.36666666666666664" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/layout/activity_backup_setting.xml" value="0.36666666666666664" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+<<<<<<< HEAD
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/layout/activity_print_sms.xml" value="0.36666666666666664" />
+        <entry key="..\:/CODE/code/a202112_sms_print_1/app/src/main/res/layout/item_sms.xml" value="0.36666666666666664" />
+=======
+        <entry key="..\:/Gitlab/SMSPrint2/app/src/main/res/layout/activity_font_call_log.xml" value="0.34814814814814815" />
+        <entry key="..\:/Gitlab/SMSPrint2/app/src/main/res/layout/activity_main.xml" value="0.35462962962962963" />
+<<<<<<< HEAD
+        <entry key="..\:/NamDx/a202112_sms_print_1/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/NamDx/a202112_sms_print_1/app/src/main/res/layout/activity_print_sms.xml" value="0.36666666666666664" />
+        <entry key="..\:/NamDx/a202112_sms_print_1/app/src/main/res/layout/item_call_logs.xml" value="0.36666666666666664" />
+=======
+        <entry key="..\:/Gitlab/SMSPrint2/app/src/main/res/layout/activity_permission.xml" value="0.3569230769230769" />
+        <entry key="..\:/Gitlab/SMSPrint2/app/src/main/res/layout/activity_splash.xml" value="0.3569230769230769" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/drawable/ic_back.xml" value="0.3472222222222222" />
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/layout/activity_backup_completed.xml" value="0.3625" />
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/layout/activity_select_card.xml" value="0.3625" />
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/layout/activity_setting.xml" value="0.3625" />
+        <entry key="..\:/New Android Project/a202112_sms_print_1/app/src/main/res/layout/activity_setup.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+=======
+=======
+>>>>>>> 26ffaaa90af428119c0e97696452e7048ea4e666
+>>>>>>> 6a9996e1164b8b6e655add280bac5645c29e312c
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+<<<<<<< HEAD
+>>>>>>> bdf9f3c7b01e5b2d2567d76eb15a5f0807926ec6
+=======
+>>>>>>> 26ffaaa90af428119c0e97696452e7048ea4e666
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

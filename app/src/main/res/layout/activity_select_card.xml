@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingTop="37dp"
+                android:paddingEnd="20dp">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back" />
+                </com.andexert.library.RippleView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/btnBack"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Browser"
+                    android:textColor="#22253B"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_bg_recently"
+                android:orientation="horizontal">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/btnSdCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    app:rv_centered="true"
+                    app:rv_rippleDuration="150"
+                    android:background="@drawable/ic_bg_sms"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="SD Card"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/btnStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:rv_centered="true"
+                    app:rv_rippleDuration="150"
+                    android:background="@drawable/ic_bg_call_logs"
+                    android:gravity="center"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="Internal Storage"
+                        android:textColor="#85878D"
+                        android:textSize="13sp" />
+                </com.andexert.library.RippleView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_card"
+                android:visibility="visible"
+                android:paddingStart="26dp"/>
+
+            <LinearLayout
+                android:id="@+id/Path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingStart="26dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_surface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/storage/emulated/D/SuperRar"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:visibility="visible"
+                tools:listitem="@layout/item_browser"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" />
+
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_ok"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:rv_centered="true"
+            app:rv_rippleDuration="150"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Select"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </com.andexert.library.RippleView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/ic_tik_select"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

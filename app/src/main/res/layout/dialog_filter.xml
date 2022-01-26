@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_background_filter"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingTop="15dp"
+                android:text="Filter"
+                android:textColor="#22253B"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/edtDate"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="22dp"
+                    android:backgroundTint="@color/white"
+                    android:hint="DD/MM/YYYY"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#E5E5E5"
+                    android:textSize="11sp"
+                    app:icon="@drawable/ic_calendar"
+                    app:iconGravity="start"
+                    app:iconTint="@color/black" />
+
+            </RelativeLayout>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_ok_filter"
+                android:paddingBottom="10dp"
+                app:rv_centered="true"
+                app:rv_color="@color/white"
+                app:rv_rippleDuration="60">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ok"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+            </com.andexert.library.RippleView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

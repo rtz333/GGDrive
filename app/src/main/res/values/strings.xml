@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmsPrint</string>
+    <string name="welcome">We will need your permission for this application to perform SMS printing and backup functions. We never see your data content.</string>
+
+    <string name="setup">Setup</string>
+    <string name="login_drive">Choose Google Drive Account</string>
+    <string name="backup_now">Log In</string>
+
+</resources>

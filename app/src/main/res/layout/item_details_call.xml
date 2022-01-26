@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/ic_bg_item"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp">
+
+    <RelativeLayout
+        android:id="@+id/rlCallStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.andexert.library.RippleView
+
+            android:id="@+id/btnTikSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+          >
+
+
+            <ImageView
+                android:id="@+id/imgSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_tick_select" />
+        </com.andexert.library.RippleView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivProfileOther"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/ivProfileOther"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="5dp"
+            android:paddingBottom="4dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/ivProfileOther"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btnTikSelect"
+            android:contentDescription="profile_other"
+            android:paddingLeft="5dp"
+
+            android:src="@drawable/avatar_with_online_indicator" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto"
+            android:paddingHorizontal="5dp"
+            android:text="0903123456"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:padding="5dp"
+                android:text="00:00:00"
+                android:textColor="@color/black"
+
+                android:textSize="13dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/imgStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:paddingEnd="20dp"
+                android:src="@drawable/ic_call"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlCallStyle"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto"
+            android:text="05:00"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tvDateCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto"
+            android:paddingEnd="30dp"
+            android:text="11:01:2021"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

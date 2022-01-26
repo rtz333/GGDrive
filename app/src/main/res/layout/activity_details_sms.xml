@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingTop="37dp"
+                android:paddingEnd="20dp">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:rv_centered="true"
+                    app:rv_rippleDuration="150"
+                    android:layout_marginEnd="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back" />
+                </com.andexert.library.RippleView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Mr A"
+                    android:layout_toEndOf="@+id/btnBack"
+                    android:textColor="#22253B"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/tvSelect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select all"
+                        android:textColor="#85878D"
+                        android:textSize="11sp"
+                        android:layout_centerInParent="true"
+                        android:paddingEnd="10dp"
+                        android:layout_toLeftOf="@+id/btnSelectAll"
+                        android:fontFamily="@font/roboto"/>
+
+                    <com.andexert.library.RippleView
+                        android:id="@+id/btnSelectAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        app:rv_centered="true"
+                        app:rv_rippleDuration="150"
+                        android:background="@drawable/ic_tick_select">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                        />
+
+                    </com.andexert.library.RippleView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_search_now"
+                android:layout_marginTop="20dp"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_img_search"/>
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Search Now"/>
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/ic_view"
+                    android:layout_centerVertical="true">
+                </View>
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thusday, December 2,2021"
+                    android:textSize="11sp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto"/>
+
+                <View
+                    android:layout_width="130dp"
+                    android:layout_height="1dp"
+                    android:background="@drawable/ic_view"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:background="@drawable/ic_bg_message"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/btnBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bg_message_theme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="Background"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+            <com.andexert.library.RippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fontt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Font"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/export"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Export"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:rv_centered="true"
+                app:rv_rippleDuration="150"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_printt"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Print"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

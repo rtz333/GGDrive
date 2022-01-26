@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:background="@drawable/ic_bg_item"
+    android:layout_margin="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp"
+    android:clipToPadding="false">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/btnTikSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_tick_select">
+
+    </com.andexert.library.RippleView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivProfileOther"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@+id/ivProfileOther"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingBottom="4dp"
+        android:text="Date time"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/ivProfileOther"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toEndOf="@+id/btnTikSelect"
+        android:contentDescription="profile_other"
+        android:paddingLeft="5dp"
+
+        android:src="@drawable/avatar_with_online_indicator" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:background="@drawable/ic_bg_message_theme"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto"
+        android:paddingHorizontal="5dp"
+        android:text="Someone else's message"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+</RelativeLayout>
